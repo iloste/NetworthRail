@@ -4,52 +4,6 @@
 #include "StringManipulation.h"
 #include <iostream>
 
-// to do:
-// figure out which functions can be private
-// Make sure the definitions of functions match the order of the header file for readability reasons.
-// finish commenting/tidying this script.
-// understand the string manipulation stuff.
-// use shared smart pointers
-
-// explaining the alternative data structure.
-// an alternative to using vectors would be to ues a linked list. Each station would have a vector of pointers to the next previous stations for each train line,
-// as well as a pointer to the previous and next station in the master line. This would essentially make the trainline class redundant as the only information
-// needed would be the name. You would also have a vector of the initial stations so that you can access each line.
-
-
-
-// goal:
-// Allow the user to create and alter multiple trainlines via the console.
-
-// Requirements:
-// Imports the trainlines from a text file.
-//      each trainline should be on a new file line.
-// Change a station's name.
-// Move a station in a line.
-// Add a new station anywhere in the line.
-// Ability to print all stations on a line.
-// Save any changes.
-// Quit the program properly.
-
-// Breakdown:
-// importTrainLines()
-//      // readFromFile()
-//      // storeInDataStructure()
-//      // linkStations()               // this and the above may all happen at the same time
-// 
-// userFunctionality()
-//      // changeStationName()
-//      // changeNextStation()
-//      // addNewStation()
-//      // printTrainLine()
-//      // quit()
-// 
-// export/save()
-//      // writeTrainlinesToFile()
-
-
-
-
 
 enum class TrainTasks
 {
@@ -69,10 +23,8 @@ enum class TrainTasks
 };
 
 
-
 void gameLoop(TrainNetwork& trainNetwork);
 void printMenu();
-
 
 bool executeTask(TrainTasks task, TrainNetwork& trainNetwork);
 void addNewTrainLine(TrainNetwork& trainNetwork);
@@ -89,8 +41,6 @@ void changeStationName(TrainNetwork& trainNetwork);
 void moveStationOnLine(TrainNetwork& trainNetwork);
 
 
-
-//####################################Don't forget to go through each class and figure out what should be private and what should be public.
 int main()
 {
 	TrainNetwork trainNetwork{};
@@ -318,5 +268,3 @@ void moveStationOnLine(TrainNetwork& trainNetwork)
 
 	trainNetwork.moveStationOnLine(lineName, stationToMove, previousStationName);
 }
-
-
