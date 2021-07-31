@@ -1,0 +1,3 @@
+F:\Game Development\Personal Projects\C++\NetworthRail\Debug\NetworthRail.exe
+D:\Game Development\Personal Projects\C++\NetworthRail\Debug\NetworthRail.exe
+D:\Game Development\Personal Projects\C++\NetworthRail\Debug\NetworthRail.pdb

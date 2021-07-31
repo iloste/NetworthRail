@@ -1,0 +1,33 @@
+﻿  NetworthRail.cpp
+  TrainNetwork.cpp
+F:\Game Development\Personal Projects\C++\NetworthRail\TrainNetwork.cpp(319,28): error C2440: 'return': cannot convert from '_Ty' to 'TrainStation *'
+          with
+          [
+              _Ty=std::shared_ptr<TrainStation>
+          ]
+F:\Game Development\Personal Projects\C++\NetworthRail\TrainNetwork.cpp(319,27): message : No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+F:\Game Development\Personal Projects\C++\NetworthRail\TrainNetwork.cpp(415,37): error C2664: 'std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>> std::vector<_Ty,std::allocator<_Ty>>::insert(std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>,const _Ty &)': cannot convert argument 2 from 'TrainStation *' to 'const _Ty &'
+          with
+          [
+              _Ty=std::shared_ptr<TrainStation>
+          ]
+F:\Game Development\Personal Projects\C++\NetworthRail\TrainNetwork.cpp(415,37): message : Reason: cannot convert from 'TrainStation *' to 'const _Ty'
+          with
+          [
+              _Ty=std::shared_ptr<TrainStation>
+          ]
+F:\Game Development\Personal Projects\C++\NetworthRail\TrainNetwork.cpp(415,37): message : Constructor for class 'std::shared_ptr<TrainStation>' is declared 'explicit'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include\vector(807,14): message : see declaration of 'std::vector<std::shared_ptr<TrainStation>,std::allocator<std::shared_ptr<TrainStation>>>::insert'
+F:\Game Development\Personal Projects\C++\NetworthRail\TrainNetwork.cpp(420,31): error C2664: 'void std::vector<std::shared_ptr<TrainStation>,std::allocator<std::shared_ptr<TrainStation>>>::push_back(const _Ty &)': cannot convert argument 1 from 'TrainStation *' to 'const _Ty &'
+          with
+          [
+              _Ty=std::shared_ptr<TrainStation>
+          ]
+F:\Game Development\Personal Projects\C++\NetworthRail\TrainNetwork.cpp(420,31): message : Reason: cannot convert from 'TrainStation *' to 'const _Ty'
+          with
+          [
+              _Ty=std::shared_ptr<TrainStation>
+          ]
+F:\Game Development\Personal Projects\C++\NetworthRail\TrainNetwork.cpp(420,31): message : Constructor for class 'std::shared_ptr<TrainStation>' is declared 'explicit'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include\vector(723,10): message : see declaration of 'std::vector<std::shared_ptr<TrainStation>,std::allocator<std::shared_ptr<TrainStation>>>::push_back'
+  Generating Code...
